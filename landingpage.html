@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <p>Hii " <span id="email"></span> " your password is " <span id="password"></span> "</p>
+    <script>
+        document.getElementById("email").innerText = localStorage.getItem("loginemail")
+        document.getElementById("password").innerText = localStorage.getItem("loginpassword")
+    </script>
+</body>
+</html>
